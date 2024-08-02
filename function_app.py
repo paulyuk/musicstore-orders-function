@@ -20,7 +20,7 @@ def order(req: func.HttpRequest) -> func.HttpResponse:
     order = Order(**req_body["order"])
 
     logging.info(
-        f"Received order with shoppingCartId: {shopping_cart_id} from name: {order.FirstName} {order.LastName}"
+        f"Received order with shoppingCartId : {shopping_cart_id} from name: {order.FirstName} {order.LastName}"
     )
     logging.info(str(order))
 
